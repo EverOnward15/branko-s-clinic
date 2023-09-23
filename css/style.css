@@ -66,7 +66,7 @@ header, body section {
     color:  #F9FAF8;
 }
 
-.logo:hover {
+.logo-link:hover {
     color: #3882F6;
 }
 
@@ -187,6 +187,7 @@ nav a {
     width: 167px;
     border: 3px solid #3882F6;
     border-radius: 5px;
+    margin-right: 50px;
 } 
 
 .service-article h2 {
@@ -249,6 +250,11 @@ main article article p {
     border-radius: 10px;
     width: 125px;
     height: 45px;
+}
+
+.cta-button:hover{
+    color:#1F2937;
+    cursor: pointer;
 }
 
 .footer {
