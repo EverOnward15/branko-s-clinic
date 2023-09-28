@@ -37,7 +37,7 @@ main {
     max-width: 1440px;
 }
 
-header, body section {
+header {
     background-color: #1F2937;
 
 }
