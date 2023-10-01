@@ -355,6 +355,8 @@ main article article p {
     justify-content: right;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 5pc;
+    margin-bottom: 7pc;
 }
 
 .banner-text{
