@@ -5,6 +5,7 @@
 
 html {
     box-sizing: border-box;
+    
 }
 
 
@@ -29,10 +30,12 @@ body {
 
 main {
     display: block;
+    max-width: auto;
+    padding: 0;
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     max-width: 1440px;
 }
@@ -48,7 +51,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     padding: 0;
-    height: 56px;
+    min-height: 56px;
     
 }
 
@@ -72,12 +75,13 @@ header {
 
 nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex: 1;
     padding: 0;
     margin: 0;  
-    position: relative; 
+    /* position: relative;  */
     margin-right: 209px;
+    flex-wrap: wrap;
 }
 .nav {
     list-style: none;
@@ -99,10 +103,10 @@ nav {
    
 }
 
-.nav a {
-    position: relative;
-    bottom: 13px;
-}
+/* .nav a {
+    /* position: relative;
+    bottom: 13px; 
+} */
 
 .nav a:hover {
     color: #3882F6;
@@ -112,8 +116,92 @@ ul.nav {
     margin: 0;  
 }
 
+.hero-homepage {
+    max-height: 480px;
+    background-color: #1F2937;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+/* div.headline.container {
+    /* padding-left: 165px; 
+} */
+
+section div.headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    /* min-width: 500px; */
+    flex-wrap: wrap;
+    color: #F9FAF8;
+    margin-left: 100px;
+}
+
+.headline-message {
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.headline-text {
+    color: #E5E7EB;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+.cta-button1{
+    color: white;
+    background-color: #3882F6;
+    margin: 0;
+    padding: 0;
+    border:1px solid #1F2937;
+    border-radius: 10px;
+    width: 125px;
+    height: 45px;
+    position: relative;
+    left: 200px;    
+}
+
+.cta-button1:hover{
+    color:#1F2937;
+    cursor: pointer;
+}
+
+/* /* section picture.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 350px; 
+}
+
+.hero-homepage .container {
+    /* margin-left: 285px; 
+} */
+
+.main-picture {
+    display: flex;
+    margin-right: 100px;
+}
+
+.main-doctor-pic {
+    max-width: auto;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
 .hero .container {
-    height: 480px;
+    max-height: 480px;
 }
 
 /* .hero-image {
@@ -127,10 +215,31 @@ ul.nav {
     object-fit: cover;
 } */
 
+.service-hero {
+    margin: 0;
+    padding: 0;
+}
+
 .hero-image {
+    max-height: 480px;
     width: 100%;
-    height: 480px;
     object-fit: cover;
+}
+
+.hero {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.services-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
@@ -142,6 +251,44 @@ nav a {
     font-size: 18px;
     color: #E5E7EB;
     display: block;
+}
+
+.welcome {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials > figure {
+    flex: 1;
+}
+
+.testimonial-picture {
+    height: 167px;
+    width: 167px;
+    border: 3px solid #3882F6;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 .services .container {
@@ -198,6 +345,27 @@ nav a {
 
 main article article p {
     font-size: 20px;
+}
+
+.grey-banner {
+    display: flex;
+    min-height: 250px;
+    background-color: #E5E7EB;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.banner-text{
+    margin-left: 20pc;
+    margin-right: 20pc;
+    margin-top: 5pc;
+    padding: 0;
+}
+
+.quote-by {
+    margin-right: 20pc;
 }
 
 .aside .container {
