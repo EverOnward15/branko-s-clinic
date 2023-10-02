@@ -25,13 +25,13 @@ body {
 main {
     display: block;
 }
-
+/* 
 .container {
     margin: 0 auto;
     padding: 0;
     max-width: 1440px;
-}
-
+} */
+/* 
 header {
     background-color: #1F2937;
 
@@ -105,38 +105,57 @@ nav {
 
 ul.nav {
     margin: 0;  
-}
+} */
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
 }
 
-.container {
+section {
     display: flex;
-    justify-content: center;
-    align-items: flex-start; 
+    justify-content: space-around;
+    align-items: center; 
     margin: 20px auto;
-    max-width: 1440px;
+    flex-direction: column;
 }
 
 .form-container{
-    flex: 1;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 600px;
+    width: 50%;
+    min-width: auto;
 }
+
+.container-aside {
+    width: 50%;
+    position: relative;
+    left: 25px;
+}
+
+iframe {
+    max-width: auto !important;
+}
+
+
 form  {
     background-color: #fff;
     /* border-radius: 5px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
-    width: 800px;
+}
+
+#name, #email {
+    width: 70%;
+}
+
+textarea {
+    width: 60%;
+    min-height: 75px;
 }
 
 h1 {
@@ -156,7 +175,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -187,12 +206,12 @@ aside, section{
 h2,h5:hover{
     color: #007BFF;
 }
-.footer {
+/* .footer {
     background-color: #1F2937;
     
-}
+} */
 
-.footer .container {
+/* .footer .container {
     height: 100px;
     width: 100px;
     display: flex;
@@ -204,6 +223,6 @@ h2,h5:hover{
 .footer p {
     text-align: center; 
     color: white;
-}
+} */
 
 
